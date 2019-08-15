@@ -1,29 +1,21 @@
-//var firstName = 'Chloe';
-var age = 16;
+//Ask for first name of user
+const firstName = prompt('What is your first name?');
 
-const firstName = 'Chloe';
-const areYouMarried = false;
-console.log(firstName.length);
+//Ask for last name of user
+const lastName = prompt('What is your last name?');
 
-const question = prompt('Are you married?');
-if (question === areYouMarried) {
-    console.log('Bitch, the FUCK you are.');
-} else {
-    console.log('Sorry bout it g');
-}
-//Old Way
-//console.log('My name is ' + firstName + ' and I am ' + age + ' years old.');
-//Better Way
-//console.log(`My name is ${firstName} and my age is ${age}`);
+//Log firstName 
+console.log(`Your first name is ${firstName}.`);
 
-//alert(`Hello, I am ${firstName}`);
+//Alert lastName
+alert(`So you\'re REALLY gunna tell me that ${lastName} is your last name?`);
 
-// const birthday = '11/24/2002';
-// let fixDate = new Date(birthday);
-// console.log(fixDate);
+//Ask for birthday 
+const birthDay = prompt('What is your date of birth?');
 
-//console.log(typeof());
+//Confirm validity
+confirm(`${birthDay} better be your real birthday. If not, surrender now.`);
 
-const topThreeMovies = ['The House Bunny', ''];
-console.log(topThreeMovies);
-console.log(`my second fav movie is: ${topThreeMovies[1]}`)
+//Alert resulting birthday
+const birthDate = new Date(birthDay);
+alert(`Your birth date is ${birthDate}`);
